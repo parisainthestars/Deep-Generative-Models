@@ -18,20 +18,20 @@ A comprehensive study of modern generative AI, covering:
 This assignment explores the math behind Probabilistic Graphical Models (PGMs) and analyzes disentanglement in VAEs.
 
 ### 1. Theoretical Report
-* **Bayesian Networks:** modeled causal relationships for a medical diagnosis scenario and verified independence using d-separation [cite: 33-86].
-* **Markov Networks:** Analyzed Markov Blankets, perfect maps, and factorization using maximal cliques [cite: 102-137].
-* **Variational Inference:** Mathematically derived the Evidence Lower Bound (ELBO) and proved optimal parameter estimation for a specific distribution [cite: 212-260].
+* **Bayesian Networks:** modeled causal relationships for a medical diagnosis scenario and verified independence using d-separation.
+* **Markov Networks:** Analyzed Markov Blankets, perfect maps, and factorization using maximal cliques.
+* **Variational Inference:** Mathematically derived the Evidence Lower Bound (ELBO) and proved optimal parameter estimation for a specific distribution.
 
 ### 2. Implementation (VAE on dSprites)
 Implemented a VAE from scratch to analyze **latent space disentanglement** using the dSprites dataset.
 
-* **Core Architecture:** Standard VAE with Reparameterization Trick and BCE + KL Loss [cite: 275-328].
-* **$\beta$-VAE Experiments:** Trained three models ($\beta=1, 4, 8$) to test the trade-off between reconstruction quality and disentanglement[cite: 396].
+* **Core Architecture:** Standard VAE with Reparameterization Trick and BCE + KL Loss.
+* **$\beta$-VAE Experiments:** Trained three models ($\beta=1, 4, 8$) to test the trade-off between reconstruction quality and disentanglement.
     * **$\beta=1$:** Best reconstruction (sharp images), entangled latent space.
-    * **$\beta=8$:** Best disentanglement (MIG score: 0.1988), but blurry reconstructions [cite: 465-467].
+    * **$\beta=8$:** Best disentanglement (MIG score: 0.1988), but blurry reconstructions.
 * **Evaluation:**
     * **MIG Metric:** Quantified disentanglement success.
-    * **PCA Visualization:** Visualized the latent space, showing clear structural separation for high-$\beta$ models [cite: 489-495].
+    * **PCA Visualization:** Visualized the latent space, showing clear structural separation for high-$\beta$ models.
 
 ### 3. Literature Review
-Analyzed advanced VAE variants including **VQ-VAE** (Discrete Latent Space), **VampPrior** (Mixture of Posteriors), and **SC-VAE** (Sparse Coding via ISTA) [cite: 505-548].
+Analyzed advanced VAE variants including **VQ-VAE** (Discrete Latent Space), **VampPrior** (Mixture of Posteriors), and **SC-VAE** (Sparse Coding via ISTA).
