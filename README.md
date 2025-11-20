@@ -31,7 +31,7 @@ Implemented a VAE from scratch to analyze **latent space disentanglement** using
     * **$\beta=8$:** Best disentanglement (MIG score: 0.1988), but blurry reconstructions.
 * **Evaluation:**
     * **MIG Metric:** Quantified disentanglement success.
-    * **PCA Visualization:** Visualized the latent space, showing clear structural separation for high-$\beta models.
+    * **PCA Visualization:** Visualized the latent space, showing clear structural separation for high $\beta$ models.
 
 ### 3. Literature Review
 Analyzed advanced VAE variants including **VQ-VAE** (Discrete Latent Space), **VampPrior** (Mixture of Posteriors), and **SC-VAE** (Sparse Coding via ISTA).
